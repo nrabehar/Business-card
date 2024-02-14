@@ -1,0 +1,11 @@
+.container {
+  width: 80vw;
+  border-radius: 1rem;
+  background: var(--background-card);
+  box-shadow: 0 1.5rem 1.75rem -5px rgba(0, 0, 0, 0.125),
+              0 .25rem .34rem -6px rgba(0, 0, 0, 0.125);
+  overflow: clip;
+  position: relative;
+  width: 75%;
+  height: 75%;
+}
