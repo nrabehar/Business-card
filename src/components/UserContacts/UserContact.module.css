@@ -51,10 +51,36 @@
   flex-wrap: wrap;
 }
 
+.contacts::before {
+  content: '';
+  position: absolute;
+  width: 2.75rem;
+  height: 2.75rem;
+  left: 78%;
+  top: 20%;
+  background: var(--background);
+  z-index: 250;
+}
+
+.contacts::after {
+  content: '';
+  position: absolute;
+  width: 2.75rem;
+  height: 1rem;
+  left: 165%;
+  top: 12%;
+  background: var(--background);
+  z-index: 250;
+}
+
 @media screen and (max-width: 820px) {
   .contacts {
     width: 40%;
     font-size: .85em;
+  }
+  .contacts::before,
+  .contacts::after {
+    display: none;
   }
 }
 
@@ -80,8 +106,6 @@
     font-size: 2em;
   }
 }
-
-
 
 @media screen and (max-width: 390px) {
   .contact_block {

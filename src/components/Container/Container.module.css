@@ -1,8 +1,8 @@
 .container {
   border-radius: 1rem;
   background: var(--background-card);
-  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.175),
-              0 3px 8px -6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.267),
+              0 3px 8px -6px rgba(0, 0, 0, 0.208);
   overflow: clip;
   position: relative;
   display: flex;
@@ -15,8 +15,8 @@
   position: absolute;
   top: -2.75rem;
   right: -2.75rem;
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   background: var(--primary);
   z-index: 20;
@@ -25,6 +25,7 @@
 .section {
   flex: 1;
   display: flex;
+  align-items: center;
   overflow-y: auto;
 }
 
