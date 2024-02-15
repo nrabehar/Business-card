@@ -28,6 +28,7 @@
 }
 
 .tech {
+  line-height: 1.85;
   cursor: default;
   transition: color .25s ease;
 }

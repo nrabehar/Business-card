@@ -3,7 +3,7 @@
   background: var(--primary);
   color: var(--white);
   height: 100%;
-  width: 35%;
+  width: 30%;
   position: relative;
   display: flex;
     flex-wrap: wrap;
@@ -11,6 +11,7 @@
   justify-content: end;
   padding: 1.75rem 0;
   gap: 1.75rem;
+  font-size: .85em;
 }
 
 .contact_block {
@@ -27,7 +28,8 @@
 }
 
 .contact_block .content {
-  font-size: .85em;
+  opacity: .75;
+  transition: .25s ease;
 }
 
 .contact_divider {
@@ -47,8 +49,18 @@
 
 .social_links .icons {
   display: flex;
-  gap: .5em;
+  gap: 1em;
   flex-wrap: wrap;
+}
+
+.social_links .icons .icon {
+  opacity: .75;
+  transition: .25s ease;
+  font-size: 1.25em;
+}
+.social_links .icons .icon:hover,
+.contact_block .content:hover {
+  opacity: 1;
 }
 
 .contacts::before {
@@ -56,7 +68,7 @@
   position: absolute;
   width: 2.75rem;
   height: 2.75rem;
-  left: 78%;
+  left: 76%;
   top: 20%;
   background: var(--background);
   z-index: 250;
@@ -67,13 +79,13 @@
   position: absolute;
   width: 2.75rem;
   height: 1rem;
-  left: 165%;
+  left: 176%;
   top: 12%;
   background: var(--background);
   z-index: 250;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 880px) {
   .contacts {
     width: 40%;
     font-size: .85em;

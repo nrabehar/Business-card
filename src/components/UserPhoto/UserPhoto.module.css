@@ -1,12 +1,12 @@
 .photo_container {
-  width: 50%;
+  width: 48%;
   height: 80%;
   margin-left: -10%;
   z-index: 125;
 }
 .user_photo {
   position: absolute;
-  left: 30%;
+  left: 25%;
   top: 10%;
   width: 30%;
   height: 80%;
@@ -17,7 +17,7 @@
 }
 
 .user_photo:hover {
-  transform: scale(1.025);
+  transform: scale(1.015);
 }
 
 .photo_container::before {
@@ -25,7 +25,7 @@
   position: absolute;
   width: 2.75rem;
   height: 2.75rem;
-  left: 32.5%;
+  left: 27.5%;
   bottom: 5%;
   background: var(--background);
   z-index: 250;
@@ -36,14 +36,14 @@
   position: absolute;
   width: 2.75rem;
   height: 2.75rem;
-  left: 58%;
+  left: 52.75%;
   bottom: 5%;
   border-radius: 50%;
   background: var(--primary);
   z-index: 20;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 880px) {
   .photo_container {
     position: absolute;
     top: 1.75rem;

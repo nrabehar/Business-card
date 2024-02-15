@@ -24,7 +24,7 @@ function App() {
             location='San Francisco'
             description='High accomplishment and user-focused Front-end Developer adept in collaborating with UX and design teams to plan the technical writting and execution of functionnal specifications for websites and applications.'
             technologies={[
-              'Javascript','React','Nodejs'
+              'JavaScript','React','Node.js', 'GraphQL'
             ]}
           />
         </Container.Section>
