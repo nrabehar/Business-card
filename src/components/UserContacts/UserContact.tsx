@@ -77,25 +77,23 @@ const ContactSocials = ({
 }: Omit<IUserContact, 'email' | 'phone'>) => {
 	const [links, setLinks] = useState<ISocialLink[]>([]);
 
-	const add_link = (link: ISocialLink) => {
-		const clone = [...links, link];
-		setLinks(clone);
+	const update_links = (_links: ISocialLink[]) => {
+		setLinks(_links);
 	};
 
 	useEffect(() => {
+    const soc_links = [] as ISocialLink[]
 		for (const key in social_links) {
 			if (Object.prototype.hasOwnProperty.call(social_links, key)) {
 				const link = social_links[key];
 				const iconName = `Fa${capitalize(key)}`;
-				add_link({
-					link,
-					icon: (FontAwesome as any)[iconName],
-				});
+        soc_links.push({
+          link,
+          icon: (FontAwesome as any)[iconName]
+        })
 			}
 		}
-		return () => {
-			setLinks([]);
-		};
+    update_links(soc_links);
 	}, []);
 
 	return (

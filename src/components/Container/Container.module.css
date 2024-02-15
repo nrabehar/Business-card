@@ -1,13 +1,25 @@
 .container {
   border-radius: 1rem;
   background: var(--background-card);
-  box-shadow: 0 1.5rem 1.75rem -5px rgba(0, 0, 0, 0.125),
-              0 .25rem .34rem -6px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.175),
+              0 3px 8px -6px rgba(0, 0, 0, 0.175);
   overflow: clip;
   position: relative;
   display: flex;
   width: 75%;
   height: 75%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: -2.75rem;
+  right: -2.75rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: var(--primary);
+  z-index: 20;
 }
 
 .section {
@@ -35,6 +47,6 @@
 }
 @media screen and (max-width: 580px) {
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
