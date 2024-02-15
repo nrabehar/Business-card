@@ -85,6 +85,15 @@
   z-index: 250;
 }
 
+@media screen and (min-width: 1081px) {
+  .contacts::before {
+  left: 78%;
+  }
+  .contacts::after {
+    left: 178%;
+  }
+}
+
 @media screen and (max-width: 880px) {
   .contacts {
     width: 40%;
