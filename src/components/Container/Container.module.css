@@ -1,5 +1,4 @@
 .container {
-  width: 80vw;
   border-radius: 1rem;
   background: var(--background-card);
   box-shadow: 0 1.5rem 1.75rem -5px rgba(0, 0, 0, 0.125),
@@ -8,4 +7,16 @@
   position: relative;
   width: 75%;
   height: 75%;
+}
+
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .container {
+    width: 90%;
+  }
 }
