@@ -1,6 +1,8 @@
-import { Container, UserContact } from './components';
+import assets from './assets';
+import { Container, UserContact, UserPhoto } from './components';
 
 function App() {
+
 	return (
 		<>
 			<Container>
@@ -11,6 +13,9 @@ function App() {
 						github: 'https://www.github.com/nrabehar',
 					}}
 				/>
+        <Container.Section>
+          <UserPhoto src={assets.images.userPic} alt='user-pic' />
+        </Container.Section>
 			</Container>
 		</>
 	);

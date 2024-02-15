@@ -5,10 +5,23 @@
               0 .25rem .34rem -6px rgba(0, 0, 0, 0.125);
   overflow: clip;
   position: relative;
+  display: flex;
   width: 75%;
   height: 75%;
 }
 
+.section {
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 820px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media screen and (max-width: 720px) {
   .container {
@@ -18,5 +31,10 @@
 @media screen and (max-width: 620px) {
   .container {
     width: 90%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .container {
+    flex-direction: column;
   }
 }
