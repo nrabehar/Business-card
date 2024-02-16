@@ -1,3 +1,3 @@
-# Simple Bussiness-card project
+# Simple Bussiness card project
 
 ![image preview](./public/preview-image.png)
